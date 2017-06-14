@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<title>GuaraniCard</title>
+<head>
+    <meta charset="utf8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Raleway" rel="stylesheet">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script>
+       function onSubmit(token) {
+         document.getElementById("formCaptcha").submit();
+       }
+     </script>
+</head>
+
+<body>
+    <div class="GCresponsive">
+        <div class="cabecalho">
+            <p>O GuaraniCard é</p>
+            <p>
+                <span class="word wisteria">prático</span>
+                <span class="word belize">econômico</span>
+                <span class="word pomegranate">seguro</span>
+                <span class="word green">novidade</span>
+            </p>
+        </div>
+        <div class="principal">
+            <div class="title">
+                <div><span class="typcn typcn-heart-outline icon heading"></span></div>
+                <h1 class="heading">SIMPLES & <br>RÁPIDO</h1>
+                <div class="smallsep heading"></div>
+                <h2 class="heading">Compre e pague em Reais<br> Não se confunda com o câmbio<br> Economize nas taxas</h2>
+            </div>
+            <div>
+                <img class="guaranicard" src="img/12-02.png">
+            </div>
+            <div class="border">
+            </div>
+            <div class="border-bottom">
+            </div>
+        </div>
+        <div class="g-recaptcha"
+          data-sitekey="6LcstCQUAAAAAA4WP4PuLIVKSEWq6PoEEZ4ljr73"
+          data-callback="onSubmit"
+          data-size="invisible">
+    </div>
+        <div class="formEmail">
+            <div>
+                <form id="formCaptcha" class="formCadastro" method="post">
+                    <input class="cadastro" type="email" name="email" placeholder="Cadastre seu email para saber mais">
+                    <button id="post-btn"></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            <img class="img-footer" src="img/guaranicard-antiga-wt.png">
+            <img class="img-footer" src="img/marca-icon-alta.png">
+        </div>
+    </div>
+
+
+
+    <!--Script-->
+    <script src="js/scriptwords.js">
+    </script>
+    <script src="js/sendobject.js">
+    </script>
+    <!--script-->
+</body>
+
+</html>
